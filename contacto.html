@@ -385,25 +385,62 @@
         background: #25D366;
     }
 
-    /* --- RESPONSIVE --- */
-    @media (max-width: 850px) {
-        .menu-toggle { display: block; }
-        .nav-menu {
-            position: fixed; top: 70px; right: -100%; background: var(--nav-bg);
-            flex-direction: column; width: 250px; height: calc(100vh - 70px);
-            padding: 40px 30px; gap: 30px; transition: right 0.4s ease;
-        }
-        .nav-menu.active { right: 0; }
-        .layout, .reverse-layout, .contact-layout { flex-direction: column; text-align: center; }
-        .text { text-align: center; }
-        .text h2::after { margin: 10px auto 0; }
-        
-        .menu {
-            bottom: 15px;
-            right: 15px;
-            transform: scale(0.85);
-        }
+   /* --- RESPONSIVE MEJORADO --- */
+@media (max-width: 850px) {
+
+    .menu-toggle { 
+        display: block; 
     }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        background: var(--nav-bg);
+        flex-direction: column;
+        width: 250px;
+        height: calc(100vh - 70px);
+        padding: 40px 30px;
+        gap: 30px;
+        transition: right 0.4s ease;
+    }
+
+    .nav-menu.active { 
+        right: 0; 
+    }
+
+    /* 🔥 ARREGLA EL DESBORDE */
+    .layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .card {
+        padding: 2rem 1.2rem;
+    }
+
+    .social-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu {
+        bottom: 15px;
+        right: 15px;
+        transform: scale(0.85);
+    }
+}
+    /*---fin---*/
 
     /* --- ESTILOS ICONOS 3D PANTASTIC --- */
 .social-container {
@@ -630,3 +667,4 @@
 </body>
 
 </html>
+
