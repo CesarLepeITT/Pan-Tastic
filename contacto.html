@@ -412,6 +412,30 @@
     gap: 30px;
     margin-top: 50px;
 }
+    /* --- RESPONSIVE ICONOS REDES --- */
+@media (max-width: 600px) {
+
+    .social-container {
+        flex-wrap: wrap;          /* Permite que bajen a otra fila */
+        gap: 20px;
+    }
+
+    .social-container a .layer {
+        width: 50px;              /* Reduce tamaño */
+        height: 50px;
+    }
+
+    .social-container a .layer span.fab,
+    .social-container a .layer span.fa-brands {
+        font-size: 22px;          /* Reduce ícono */
+    }
+
+    .social-container {
+        margin-top: 30px;
+    }
+}
+
+    
 
 .social-container a {
     position: relative;
@@ -693,6 +717,7 @@
 
 </body>
 </html>
+
 
 
 
